@@ -2,56 +2,103 @@
 <html lang="en">
 
 <head>
-	
-	<title>Prairie Fields</title>
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
-	<link rel="icon" href="images/png.png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title>CIS 152</title>
 </head>
 
 <body>
-<div class="picc">
-      <header class="uptop"><img src= "images/png.png" width="279" height="119" alt=""/></header>
-    </div>
-	<!-- part 1 -->
-	<div class="negiv">
-  <nav id="nav_menu">
-    <ul>
-      <li><a href="index.html" class="current">Home</a></li>
-      <li><a href="ann.html">Announcements</a></li>
-      <li><a href="board.html">Board</a></li>			
-      <li><a href="comm.html">Committees</a></li>			
-      <li><a href="contact.html">Contact Us</a>
-        
-      </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Wahab's Site</a></div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Location</a></li>
+                    
+                </ul>
+               
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact</a></li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
-	</div>
-<main>
-    <div class="contect">
-      <section>
-        <h2 style="text-align: center">ANNOUNCEMENTS </h2>
-        <p>If you are interested in running for a seat on the PF HOA Board of Directors, you can download an application form here. The day to day operations of the PF HOA are run by an all-volunteer Board of Directors.. <a href="ann.html">Read more</a></p>
-        <article>
-          <h2>NEW HOA BOARD MEMBERS</h2>
-          <h3>Brian Kesler<br>
-            <span style="text-align: center"></span>			    Kyle Kirchhoefer<br>
-          Greg Sopa<br> Tim Yardley</h3>
-          <p>Welcome new board members and returning board members. </p>
-          <p>Thank you for your service Rachel Shekar! </p>
-          <p><a href="board.html"> Read More</a></p>
-          
-        </article>
-        <h2>PF HOA BOARD OF DIRECTORS ELECTION</h2>
-        <!-- part 1 -->
-        <p>It's time to cast your vote for the four open positions on the board for 2017/18! Voting will close November 30th, 2016.
-          You can access the electronic ballot here.
-          To opt for a paper ballot, please drop a note in the HOA dropbox... <a href="file:///C|/Users/aalam/Desktop/CSS/Exercise9_COMPLETE - Updated/speakers/c6_sampson.html">Read more</a></p>
-      </section>
+
+    <div class="container">
+        <div class="row">
+
+                <form action="join.html" method="POST">
+
+                <div class="col-md-6 col-md-offset-3">
+                <div class="form-group">
+                    <label for="name">Name</label> 
+                    <input type="text" name="name" placeholder="Name" class="form-control"></input>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email</label> 
+                    <input type="email" name="email" placeholder="Email" class="form-control" ></input>
+                </div>
+				
+				<div class="form-group">
+				  <label for="email2">Address</label>
+				  <input type="email" name="email" placeholder="Street Address" class="form-control" ></input>
+                </div>
+                        
+                <div class="form-group">
+                  <label for="address2">City</label>
+                  <input type="text" name="address" placeholder="City" class="form-control"></input>
+                </div>
+            
+				<div class="form-group">
+                  <label for="address2">State</label>
+                  <input type="text" name="address" placeholder="State" class="form-control"></input>
+                </div>
+					
+					<div class="form-group">
+                  <label for="address2">ZIP</label>
+                  <input type="text" name="address" placeholder="ZIP Code" class="form-control"></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label> 
+                    <textarea name="message" class="form-control" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+ 
+                <!-- /.col-md-6 -->
+                </div>
+                </form>
+        <!-- /.row -->
+        </div>
+    <!-- /.container -->
     </div>
-    </main>
-</div>
-	<footer>
-	  <p>&copy; 2017, Wahab Alamri</p>
-	</footer>
+
+
+    <!-- JS -->
+    <script src="js/jquery-2.2.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
+
 </html>
